@@ -1,0 +1,117 @@
+.projectsSection {
+  padding: 80px 5%;
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+}
+
+/* Section Title */
+.sectionTitle {
+  color: #f9a826;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout (2×2 on laptops, 1×4 on mobile) */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    minmax(280px, 1fr)
+  ); /* 2 Columns on laptop */
+  gap: 30px;
+  justify-content: center;
+  max-width: 900px; /* Grid will not stretch too wide */
+  margin: 0 auto; /* Centers the grid */
+}
+
+/* Individual Project Cards */
+.projectCard {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-in-out forwards;
+  margin-bottom: 20px;
+  max-width: 350px; /* Ensures consistent size */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Image Styling */
+.projectImage {
+  height: 200px; /* Set your desired height */
+  width: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Hover Effect */
+.projectCard:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Button Styling */
+.btnPrimary {
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  transition: background 0.3s;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.btnPrimary:hover {
+  background-color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+/* Tablets and smaller screens */
+@media (max-width: 1024px) {
+  .projectGrid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* Adjusts for tablets */
+    gap: 25px;
+  }
+}
+
+/* Mobile screens (1 column) */
+@media (max-width: 768px) {
+  .projectsSection {
+    padding: 60px 5%;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr; /* 1 column layout */
+    gap: 20px;
+  }
+
+  .projectCard {
+    max-width: 90%;
+  }
+}

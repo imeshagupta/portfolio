@@ -1,0 +1,124 @@
+.skillsSection {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0f0c29, #15529e, #24243e);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  color: #f9a826;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+/* Skills Grid */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  row-gap: 30px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* Skill Box */
+.skillBox {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  height: 180px;
+  opacity: 0;
+  animation: slide-up 1.2s ease-in-out forwards;
+  animation-delay: calc(0.2s * var(--delay));
+  position: relative;
+  overflow: hidden;
+}
+
+.skillBox:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 5px 10px rgba(191, 153, 153, 0.3);
+}
+
+/* Skill Icon */
+.skillIcon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  animation: floating 3s infinite ease-in-out;
+}
+
+/* Skill Name */
+.skillName {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Floating Effect */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 384px) {
+  .skillsGrid {
+    display: flex; /* Switch to flex for better centering */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .skillBox {
+    width: 140px; /* Reduce width to fit smaller screens */
+    height: 160px;
+    padding: 20px;
+  }
+
+  .skillIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skillName {
+    font-size: 1.1rem;
+  }
+}

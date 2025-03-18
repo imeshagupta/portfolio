@@ -1,0 +1,59 @@
+.footer {
+  background: linear-gradient(120deg, #000000, #000000);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.footerText {
+  margin: 0;
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.socialIcons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  opacity: 0;
+  animation: fade-in 1.2s ease-in-out forwards;
+}
+
+.socialLink {
+  color: white;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.socialLink:hover {
+  color: #f9a826;
+  transform: scale(1.1);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footerText {
+    font-size: 1rem;
+  }
+  .socialIcons {
+    gap: 10px;
+  }
+  .socialLink {
+    font-size: 1.4rem;
+  }
+}

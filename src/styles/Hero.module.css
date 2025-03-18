@@ -1,0 +1,141 @@
+.heroSection {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #15529e, #24243e);
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack content in smaller screens */
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Centers text for better readability */
+  padding: 20px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #f9a826;
+}
+
+.highlight {
+  color: #f9a826;
+}
+
+.heroImg {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+.heroImg:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(167, 224, 250, 0.5);
+}
+.heroBtn {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #f9a826;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.heroBtn:hover {
+  background-color: #d48b10;
+  transform: scale(1.05);
+}
+
+/* Fade-in animations */
+.fadeInLeft {
+  opacity: 0;
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.fadeInRight {
+  opacity: 0;
+  animation: fadeInRight 1s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+  .heroSubtitle {
+    font-size: 1.3rem;
+  }
+  .heroImg {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+  .heroImg {
+    width: 220px;
+    height: 220px;
+  }
+  .heroBtn {
+    font-size: 1rem;
+    padding: 10px 18px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+  .heroImg {
+    width: 180px;
+    height: 180px;
+  }
+  .heroBtn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+  }
+}

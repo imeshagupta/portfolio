@@ -1,0 +1,146 @@
+.aboutSection {
+  padding: 80px 0;
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  color: #f9a826;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+/* Image Styling */
+.aboutImg {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  animation: fade-in 1.5s ease-in-out forwards;
+}
+
+.aboutImg:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(167, 224, 250, 0.5);
+}
+
+/* Text Styling */
+.aboutText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+
+  opacity: 0;
+  animation: fade-text 1.5s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideInLeft {
+  animation: slide-left 1.5s ease-in-out forwards;
+}
+
+.slideInRight {
+  animation: slide-right 1.5s ease-in-out forwards;
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-text {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+
+/* Tablets and smaller screens */
+@media (max-width: 1024px) {
+  .aboutSection {
+    padding: 60px 0;
+  }
+  .sectionTitle {
+    font-size: 2.4rem;
+  }
+  .aboutText {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile screens (portrait and landscape) */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .col-md-5,
+  .col-md-7 {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .aboutImg {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .aboutText {
+    font-size: 1rem;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .aboutImg {
+    width: 150px;
+    height: 150px;
+  }
+  .aboutText {
+    font-size: 0.9rem;
+  }
+}

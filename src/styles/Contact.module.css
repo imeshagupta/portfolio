@@ -1,0 +1,188 @@
+.contactSection {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0f0c29, #15529e, #24243e);
+  color: white;
+  text-align: center;
+}
+
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Social Icons */
+.contactIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contactIcons a {
+  font-size: 30px; /* Adjusts the icon size */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Specific brand colors */
+.contactIcons a[href*="linkedin.com"] {
+  color: #0077b5; /* LinkedIn's brand color */
+}
+
+.contactIcons a[href*="github.com"] {
+  color: #181717; /* GitHub's brand color */
+}
+
+.contactIcons a[href*="leetcode.com"] {
+  color: #ffa116; /* LeetCode's brand color */
+}
+
+.contactIcons a[href*="instagram.com"] {
+  color: #e4405f; /* Instagram's brand color */
+}
+
+.contactIcons a[href*="twitter.com"] {
+  color: #1da1f2; /* Twitter's brand color */
+}
+
+.contactIcons a[href*="mailto:"] {
+  color: #d44638; /* Gmail's brand color */
+}
+
+.contactIcons a:hover {
+  transform: scale(1.2);
+}
+
+/* Left Section */
+.contactLeft {
+  flex: 1;
+  padding-right: 40px;
+  min-width: 300px;
+}
+
+.sectionTitle {
+  text-align: center;
+  color: #f9a826;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contactText {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Right Section */
+.contactRight {
+  background-color: #241d66;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Contact Form */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  background: rgba(2, 0, 20, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.contactForm textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: #eee;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.contactBtn {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #f39f18;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contactBtn:hover {
+  background-color: #ff9d00;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactLeft {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+}
+
+/* Extra Small Screens (Below 384px) */
+@media (max-width: 384px) {
+  .contactText {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contactIcons {
+    gap: 10px;
+  }
+
+  .contactIcons a {
+    font-size: 35px; /* Adjusts the icon size */
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .contactBtn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
