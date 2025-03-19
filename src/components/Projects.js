@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "../styles/Projects.module.css"; // Import CSS module
+import styles from "../styles/Projects.module.css";
 import multiFusionImg from "../assets/project1.png";
 import ninjaQuizImg from "../assets/project2.png";
 import portfolioImg from "../assets/project3.png";

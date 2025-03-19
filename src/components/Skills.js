@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "../styles/Skills.module.css"; // Import CSS module
+import styles from "../styles/Skills.module.css";
 import htmlLogo from "../assets/htmlLogo.png";
 import cssLogo from "../assets/cssLogo.png";
 import jsLogo from "../assets/jsLogo.png";

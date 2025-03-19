@@ -16,7 +16,6 @@
   animation: fade-in 1s ease-in-out forwards;
 }
 
-/* Image Styling */
 .aboutImg {
   width: 250px;
   height: 250px;
@@ -33,7 +32,6 @@
   box-shadow: 0 8px 20px rgba(167, 224, 250, 0.5);
 }
 
-/* Text Styling */
 .aboutText {
   font-size: 1.2rem;
   line-height: 1.8;
@@ -42,7 +40,6 @@
   animation: fade-text 1.5s ease-in-out forwards;
 }
 
-/* Animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -95,9 +92,6 @@
   }
 }
 
-/* Responsive Design */
-
-/* Tablets and smaller screens */
 @media (max-width: 1024px) {
   .aboutSection {
     padding: 60px 0;
@@ -110,7 +104,6 @@
   }
 }
 
-/* Mobile screens (portrait and landscape) */
 @media (max-width: 768px) {
   .row {
     flex-direction: column;
@@ -131,7 +124,6 @@
   }
 }
 
-/* Small mobile screens */
 @media (max-width: 480px) {
   .sectionTitle {
     font-size: 2rem;

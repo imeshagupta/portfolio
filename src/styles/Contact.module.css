@@ -16,7 +16,6 @@
   text-align: left;
 }
 
-/* Social Icons */
 .contactIcons {
   display: flex;
   flex-wrap: wrap;
@@ -26,40 +25,38 @@
 }
 
 .contactIcons a {
-  font-size: 30px; /* Adjusts the icon size */
+  font-size: 30px;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Specific brand colors */
 .contactIcons a[href*="linkedin.com"] {
-  color: #0077b5; /* LinkedIn's brand color */
+  color: #0077b5;
 }
 
 .contactIcons a[href*="github.com"] {
-  color: #181717; /* GitHub's brand color */
+  color: #181717;
 }
 
 .contactIcons a[href*="leetcode.com"] {
-  color: #ffa116; /* LeetCode's brand color */
+  color: #ffa116;
 }
 
 .contactIcons a[href*="instagram.com"] {
-  color: #e4405f; /* Instagram's brand color */
+  color: #e4405f;
 }
 
 .contactIcons a[href*="twitter.com"] {
-  color: #1da1f2; /* Twitter's brand color */
+  color: #1da1f2;
 }
 
 .contactIcons a[href*="mailto:"] {
-  color: #d44638; /* Gmail's brand color */
+  color: #d44638;
 }
 
 .contactIcons a:hover {
   transform: scale(1.2);
 }
 
-/* Left Section */
 .contactLeft {
   flex: 1;
   padding-right: 40px;
@@ -80,7 +77,6 @@
   color: #ddd;
 }
 
-/* Right Section */
 .contactRight {
   background-color: #241d66;
   border-radius: 20px;
@@ -88,7 +84,6 @@
   min-width: 300px;
 }
 
-/* Contact Form */
 .contactForm {
   display: flex;
   flex-direction: column;
@@ -143,7 +138,6 @@
   transform: scale(1.05);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .contactContainer {
     flex-direction: column;
@@ -160,7 +154,6 @@
   }
 }
 
-/* Extra Small Screens (Below 384px) */
 @media (max-width: 384px) {
   .contactText {
     font-size: 1rem;
@@ -172,7 +165,7 @@
   }
 
   .contactIcons a {
-    font-size: 35px; /* Adjusts the icon size */
+    font-size: 35px;
   }
 
   .contactForm input,

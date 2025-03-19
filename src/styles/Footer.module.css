@@ -45,7 +45,6 @@
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .footerText {
     font-size: 1rem;

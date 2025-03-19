@@ -27,7 +27,7 @@ const Contact = () => {
         (result) => {
           console.log("Email successfully sent!", result.text);
           alert("Your message has been sent successfully!");
-          form.current.reset(); // Reset form fields
+          form.current.reset();
         },
         (error) => {
           console.error("Error sending email:", error.text);
@@ -41,14 +41,12 @@ const Contact = () => {
   return (
     <section className={styles.contactSection} id="contact">
       <div className={styles.contactContainer}>
-        {/* Left Side */}
         <div className={styles.contactLeft}>
           <h2 className={styles.sectionTitle}>Contact Me</h2>
           <p className={styles.contactText}>
             Feel free to reach out to me through any of the platforms below!
           </p>
 
-          {/* Social Media Links with Icons */}
           <div className={styles.contactIcons}>
             <a
               href="mailto:eshagupta515@gmail.com"
@@ -95,7 +93,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right Side - Contact Form */}
         <div className={styles.contactRight}>
           <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
             <input type="text" name="name" placeholder="Your Name" required />
