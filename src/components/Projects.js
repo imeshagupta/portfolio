@@ -15,7 +15,7 @@ const projectList = [
   {
     title: "Ninja Coding Quiz",
     description:
-      "An interactive quiz app with multiple categories and random questions.",
+      "An interactive quiz app featuring mcqs for coding enthusiasts who wants some fun.",
     image: ninjaQuizImg,
     link: "https://ninja-coding-quiz.netlify.app/",
   },

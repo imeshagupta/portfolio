@@ -8,7 +8,7 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { SiLeetcode, SiHackerrank } from "react-icons/si";
 
 const Contact = () => {
   const form = useRef();
@@ -75,6 +75,13 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               <SiLeetcode />
+            </a>
+            <a
+              href="https://www.hackerrank.com/imeshagupta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiHackerrank />
             </a>
             <a
               href="https://instagram.com/i.esha.27"
