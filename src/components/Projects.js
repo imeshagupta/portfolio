@@ -32,7 +32,7 @@ const projectList = [
     description:
       "A conceptual web platform aimed at helping students find funding opportunities for education. Features an intuitive layout, easy navigation, and a focus on accessibility and impact.",
     image: fund4EduImg,
-    link: "#",
+    link: "https://fund4edu.netlify.app/",
   },
   {
     title: "SukoonNama",
