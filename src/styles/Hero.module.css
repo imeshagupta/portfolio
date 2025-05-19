@@ -27,7 +27,7 @@
 }
 
 .heroImg {
-  width: 280px;
+  width: 380px;
   height: 280px;
   border-radius: 50%;
   border: 5px solid white;
@@ -35,7 +35,6 @@
   margin-bottom: 20px;
 }
 .heroImg:hover {
-  transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(167, 224, 250, 0.5);
 }
 .heroBtn {
@@ -97,21 +96,22 @@
     font-size: 1.3rem;
   }
   .heroImg {
-    width: 260px;
-    height: 260px;
+    width: 360px;
+    height: auto;
   }
 }
 
 @media (max-width: 768px) {
   .heroTitle {
+    margin-top: 30px;
     font-size: 2.5rem;
   }
   .heroSubtitle {
     font-size: 1.2rem;
   }
   .heroImg {
-    width: 220px;
-    height: 220px;
+    width: 320px;
+    height: auto;
   }
   .heroBtn {
     font-size: 1rem;
@@ -122,14 +122,15 @@
 
 @media (max-width: 480px) {
   .heroTitle {
+    margin-top: 30px;
     font-size: 2rem;
   }
   .heroSubtitle {
     font-size: 1rem;
   }
   .heroImg {
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: auto;
   }
   .heroBtn {
     font-size: 0.9rem;
