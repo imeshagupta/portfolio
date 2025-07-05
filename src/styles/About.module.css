@@ -19,9 +19,9 @@
 .aboutImg {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
-  border: 5px solid white;
-  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+  border-radius: 48%;
+  border: 3px solid white;
+  box-shadow: 0 5px 7px rgba(255, 204, 0, 0.3);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   opacity: 0;
   animation: fade-in 1.5s ease-in-out forwards;
@@ -29,7 +29,7 @@
 
 .aboutImg:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(167, 224, 250, 0.5);
+  box-shadow: 0 8px 10px rgba(167, 224, 250, 0.5);
 }
 
 .aboutText {

@@ -8,7 +8,7 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
-import { SiLeetcode, SiHackerrank } from "react-icons/si";
+import { SiHackerrank } from "react-icons/si";
 
 const Contact = () => {
   const form = useRef();
@@ -69,13 +69,7 @@ const Contact = () => {
             >
               <FaGithub />
             </a>
-            <a
-              href="https://leetcode.com/eshagupta27"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiLeetcode />
-            </a>
+
             <a
               href="https://www.hackerrank.com/imeshagupta"
               target="_blank"

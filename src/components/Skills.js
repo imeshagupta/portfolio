@@ -6,6 +6,7 @@ import reactLogo from "../assets/reactLogo.png";
 import bootstrapLogo from "../assets/bootstrapLogo.jpeg";
 import javaLogo from "../assets/javaLogo.png";
 import tailwindLogo from "../assets/tailwindLogo.png";
+import reactNativeLogo from "../assets/reactNative.png";
 
 const skills = [
   { name: "HTML", img: htmlLogo },
@@ -14,6 +15,7 @@ const skills = [
   { name: "React", img: reactLogo },
   { name: "Bootstrap", img: bootstrapLogo },
   { name: "Tailwind CSS", img: tailwindLogo },
+  { name: "React Native", img: reactNativeLogo },
   { name: "Java", img: javaLogo },
 ];
 
