@@ -4,6 +4,7 @@ import ninjaQuizImg from "../assets/project2.png";
 import portfolioImg from "../assets/project3.png";
 import fund4EduImg from "../assets/project4.png";
 import sukoonNamaImg from "../assets/project5.png";
+import myNotesAppImg from "../assets/project6.png";
 
 const projectList = [
   {
@@ -40,6 +41,13 @@ const projectList = [
       "A poetic platform that presents Hindi shayaris and poems categorized by themes. Built using React and Firebase, it offers a flowery, elegant UI that matches its soulful content.",
     image: sukoonNamaImg,
     link: "https://sukoonnama.netlify.app/",
+  },
+  {
+    title: "myNotesApp",
+    description:
+      " A simple mobile app using React Native for taking and managing notes. Users can add, edit, delete, and mark notes as favorite.",
+    image: myNotesAppImg,
+    link: "https://github.com/imeshagupta/myNotesApp.git",
   },
 ];
 
