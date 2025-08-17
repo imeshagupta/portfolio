@@ -11,7 +11,7 @@ const Hero = () => {
               Hi, I'm <span className={styles.highlight}>Esha Gupta</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Front-End Developer | React Enthusiast
+              Front-End Developer | Web & Mobile Apps
             </p>
             <a
               href="/resume.pdf"
